@@ -27,5 +27,19 @@ int main(){
     }
 
     cout << "Digite o valor do alvo" << endl; 
+    cin >> alvo; 
+
+    int resultado = buscaLinear(arr,tamanho,alvo);
+    if(resultado != -1){
+        cout << "Elemento encontrado na posição: " << resultado << endl;
+    }else{
+        cout << "Elemento não encontrado." << endl;
+    } 
+
+    delete[] arr; 
+    return 0;
+         
+     
+           
     
 }
