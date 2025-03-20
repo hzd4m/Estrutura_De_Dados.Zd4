@@ -49,6 +49,18 @@ def no_mais_barato(custos):
             no_mais_barato = no 
     return no_mais_barato 
 
+destino = "F" 
+no = no_mais_barato(custos)
+while no is not None:
+    custos = custos[no]
+    vizinhos = grafo[no]
+
+    for n in vizinhos.keys():
+        
+
+
+
+
 def imprimir_caminho(pais , destino): 
     caminho = []
     atual = destino 
